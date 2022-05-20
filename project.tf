@@ -16,8 +16,8 @@ resource "google_project_service" "cloudbuild" {
 
 # Create a service account
 resource "google_service_account" "ronin_worker" {
-  account_id   = "cats-worker"
-  display_name = "Cats Worker SA"
+  account_id   = "ronin-worker"
+  display_name = "Ronin Worker SA"
 }
 
 # Set permissions

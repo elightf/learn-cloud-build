@@ -17,3 +17,7 @@ locals {
 
   ronin_worker_sa = "serviceAccount:${google_service_account.ronin_worker.email}"
 }
+
+output "service_url" {
+  value = google_cloud_run_service.ronin.status[0].url
+}

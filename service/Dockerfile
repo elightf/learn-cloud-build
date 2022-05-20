@@ -4,7 +4,7 @@ FROM node:14.18.3-slim
 
 ENV NODE_ENV=production
 
-ENV PORT 8000
+ENV PORT 8080
 
 WORKDIR /app
 

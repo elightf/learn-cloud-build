@@ -19,7 +19,7 @@ locals {
 }
 
 output "service_url" {
-  value = google_cloud_run_service.ronin.status[0].url
+  value = "${google_cloud_run_service.ronin.status[0].url}/test"
 }
 
 output "function_url" {

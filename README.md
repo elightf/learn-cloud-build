@@ -14,14 +14,20 @@ Note: the title of this repo is not apt - that's because initially I didn't scop
 `gcloud config set project {PROJECT-ID}`
 5. Clone this GitHub repo:
 `git clone https://github.com/elightf/learn-cloud-build`
-6. `cd` into the new repo directory
+6. `cd` into the new repo directory `/learn-cloud-build`
 7. Register a new container to the registry `gcloud builds submit`
-8. `cd` into the `/terraform` directory
-9. Type `terraform init`
-10. Type `terraform apply`
-11. When terraform prompts you to execute the list of changes it's about to make, type `yes`
-12. Go grab a coffee
-13. Look for the 2 links at the end of the logs output by terraform. One is the cloud run instance, the other is an http triggered cloud function
+8. The shell will tell you `API [cloudbuild.googleapis.com] not enabled on project` - enable it by typing `y`
+9. `cd` into the `/terraform` directory
+10. Type `terraform init`
+11. Copy your project ID again
+12. Type `terraform apply`
+13. Terraform will ask you to specify the project ID - enter it now (might not hurt to double check)
+14. When terraform asks "Do you want to perform these actions?", type `yes`
+15. Go grab a :sparkles::coffee:
+16. If Terraform yells at you that an API is not enabled, just retry from step 12
+17. Look for the 2 links at the end of the logs output by terraform
+    1. The cloud run instance with a running node app mock server 
+    2. An http-triggered cloud function that responds with 200
 
 This deployment may incur charges if you left these services up for a long time. So let's take them all down again:
 

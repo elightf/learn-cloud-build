@@ -14,6 +14,11 @@ resource "google_project_service" "cloudbuild" {
   disable_on_destroy = false
 }
 
+resource "google_project_service" "cloudfunctions" {
+  service            = "cloudfunctions.googleapis.com"
+  disable_on_destroy = false
+}
+
 # Create a service account
 resource "google_service_account" "ronin_worker" {
   account_id   = "ronin-worker"

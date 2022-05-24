@@ -21,3 +21,7 @@ locals {
 output "service_url" {
   value = google_cloud_run_service.ronin.status[0].url
 }
+
+output "function_url" {
+  value = google_cloudfunctions_function.deployed_function.https_trigger_url
+}

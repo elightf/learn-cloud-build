@@ -6,4 +6,3 @@ terraform/terraform.tfstate.backup
 functions/node_modules
 functions/package-lock.json
 service/node_modules
-service/package-lock.json

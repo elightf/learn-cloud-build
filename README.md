@@ -6,6 +6,7 @@ After performing the following steps, you should have an up and running instance
 
 Note: the title of this repo is not apt - that's because initially I didn't scope out this task properly due to lack of understanding. It kind of took on a life of its own!
 
+My primary reference for this work is [here](https://github.com/GoogleCloudPlatform/serverless-expeditions/tree/main/terraform-serverless)
 
 * Create a new [Google Cloud Project](https://console.cloud.google.com/projectcreate)
 

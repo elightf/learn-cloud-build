@@ -71,7 +71,7 @@ Note: the title of this repo is not apt - that's because initially I didn't scop
 * Go grab a :sparkles::coffee:
 
 
-* If Terraform yells at you that an API is not enabled, just retry from step 12
+* If Terraform yells at you that an API is not enabled, just rerun `terraform apply`
 
 
 * Look for the 2 links at the end of the logs output by terraform 
@@ -83,6 +83,7 @@ Note: the title of this repo is not apt - that's because initially I didn't scop
 This deployment may incur charges if you left these services up for a long time. So let's take them all down again:
 
 * Reverse deployment and leave no trace
+
     ```
     terraform destroy
     ```

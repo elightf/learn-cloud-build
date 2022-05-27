@@ -5,6 +5,11 @@ on:
     branches:
       - main
   pull_request:
+  
+defaults:
+  run:
+    shell: bash
+    working-directory: ./terraform
 
 jobs:
   terraform:
@@ -19,10 +24,6 @@ jobs:
         with:
           # terraform_version: 0.13.0:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-
-      - name: CD to nested dir
-        id: cd
-        run: cd terraform
         
       - name: Terraform Format
         id: fmt

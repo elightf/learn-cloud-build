@@ -1,4 +1,5 @@
 variable "project" {
+  default     = "cloud-build-terraform-demo"
   type        = string
   description = "Google Cloud Platform Project ID"
 }

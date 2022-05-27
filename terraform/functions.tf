@@ -1,7 +1,7 @@
 # Generates an archive of the source code compressed as a .zip file.
 data "archive_file" "source" {
   type        = "zip"
-  source_dir  = "../functions"
+  source_dir  = "${path.module}/../functions"
   output_path = "/tmp/function.zip"
 }
 

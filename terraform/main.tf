@@ -7,6 +7,14 @@ terraform {
   }
 }
 
+cloud {
+  organization = "elightf"
+
+  workspaces {
+    name = "learn-cloud-build"
+  }
+}
+
 provider "google" {
   project = var.project
 }

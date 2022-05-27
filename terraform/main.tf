@@ -5,14 +5,6 @@ terraform {
       version = "~> 3.53"
     }
   }
-
-  cloud {
-    organization = "elightf"
-
-    workspaces {
-      name = "learn-cloud-build"
-    }
-  }
 }
 
 provider "google" {

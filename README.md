@@ -16,8 +16,10 @@ My primary reference for this work is [here](https://github.com/GoogleCloudPlatf
 
 * Launch Cloud Shell
   * Cloud Shell comes with installations of `git` and `terraform` included :ok:
-  * all the following CLI commands are in Cloud Shell
-  
+
+
+Execute all the following CLI commands in Cloud Shell
+
 
 * Set the current project in cloud shell to your new project ID
     ```
